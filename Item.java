@@ -52,5 +52,18 @@ class Item {
 
 	double taxReturn () {
 		//TODO
-
+		if (taxType == 'A')
+		{
+			return (15/100)*(price*(18/100));
+		}
+		else if (taxType == 'B')
+		{
+			return (15/100)*(price*(5/100));
+		}
+		else if (taxType == 'V')
+		{
+			return 0;
+		}
+		return 0; // poslednio else if ne mora da postoo
+	}
 }
